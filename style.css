@@ -1,0 +1,103 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5; /* soft neutral background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #ffffff;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    width: 450px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #2c3e50; /* deep navy for royal feel */
+    font-weight: 700;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: calc(100% - 22px);
+    margin-bottom: 10px;
+    border: 2px solid #2c3e50;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+/* Add Student Button */
+form button {
+    background: #2c3e50; /* deep navy */
+    color: #f1c40f; /* gold */
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background: #34495e; /* darker royal blue */
+    color: #f1c40f; /* gold headers */
+    font-weight: 600;
+}
+
+/* Action Buttons */
+td button {
+    padding: 6px 12px;
+    margin: 0 3px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* Mark Present */
+.mark-present {
+    background: #2980b9; /* royal blue */
+    color: #ffffff;
+}
+
+/* Mark Absent */
+.mark-absent {
+    background: #c0392b; /* dark red */
+    color: #ffffff;
+}
+
+/* Delete */
+.delete {
+    background: #7f8c8d; /* elegant gray */
+    color: #ffffff;
+}

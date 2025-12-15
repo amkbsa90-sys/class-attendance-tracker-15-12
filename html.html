@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container">
+    <h1>Attendance Tracker</h1>
+
+    <form id="attendanceForm">
+        <input type="text" id="studentName" placeholder="Enter student name">
+        <button type="submit">Add Student</button>
+    </form>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Attendance</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody id="attendanceList"></tbody>
+    </table>
+</div>
+
+<!-- Firebase Initialization -->
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-app.js";
+    import { getDatabase } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-database.js";
+
+    const firebaseConfig = {
+        apiKey: "AIzaSyCu59ryiv5vmZiy-dqCq0MZNcGEN3U5QMg",
+        authDomain: "classattendancetracker-16-11.firebaseapp.com",
+        projectId: "classattendancetracker-16-11",
+        storageBucket: "classattendancetracker-16-11.firebasestorage.app",
+        messagingSenderId: "859010275336",
+        appId: "1:859010275336:web:3c25c71b00d0587cc099bd"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const database = getDatabase(app);
+
+    // Make database available globally
+    window.firebaseDB = database;
+</script>
+
+<!-- Main logic -->
+<script type="module" src="script.js"></script>
+
+</body>
+</html>
